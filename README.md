@@ -10,7 +10,7 @@ python stock.py 카카오
 ![image](https://cloud.githubusercontent.com/assets/955914/17287248/7799f384-5809-11e6-96c6-de8acd237078.png)
 
 
-### Using [Alfred](https://www.alfredapp.com/)
+### Using [Alfred](https://www.alfredapp.com/):
 ```
 stock [stock name] 
 ```
