@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-
+import locale
 import urllib
 import json
 import unicodedata
@@ -20,7 +20,7 @@ unparsed = urllib.urlopen(u'http://m.stock.naver.com/api/json/search/searchListJ
 obj = json.loads(unparsed)
 
 elems = []
-
+locale.setlocale(locale.LC_ALL, 'en_US')
 for item in obj["result"]["d"]:
   if item["cv"] > 0 :
     arrow = "\033[0;31m▲\033[0m"
@@ -28,5 +28,5 @@ for item in obj["result"]["d"]:
     arrow = "-"
   else :
     arrow = "\033[0;34m▼\033[0m"
-  print u'- %s : %d원(%s %0.2f원, %0.2f ) : http://finance.daum.net/item/main.daum?code=%s' % (item["nm"], item["nv"], arrow, item["cv"], item["cr"], item["cd"])
+  print u'- %s : %s(%s%s, %0.2f%%) : http://finance.daum.net/item/main.daum?code=%s' % (item["nm"], locale.format("%d", item["nv"], grouping=True), arrow, locale.format("%d", item["cv"], grouping=True), item["cr"], item["cd"])
   
