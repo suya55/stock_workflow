@@ -6,7 +6,6 @@
 ```
 python stock.py 카카오
 ```
-- Result
 ![image](https://cloud.githubusercontent.com/assets/955914/17287248/7799f384-5809-11e6-96c6-de8acd237078.png)
 
 
