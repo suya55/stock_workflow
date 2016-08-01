@@ -1,5 +1,5 @@
 #Korea's stock quotation
-===================================
+
 This is a Alfred's workflow and python script. This workflow and python script about Korea's stock quotation which supports realtime China stock quotation, including all companies & indexes of KOSPI and KOSDAQ.
 
 
