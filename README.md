@@ -16,12 +16,3 @@ stock [stock name]
 ```
 ![image](https://cloud.githubusercontent.com/assets/955914/17287283/ac7c962e-5809-11e6-897a-66001527a675.png)
 
-###Change log:
-
-######1.0 Aug 1, 2016
-
-* First commit.
-
-###Author:
-
-twitter: [@suya55](http://twitter.com/suya55 "Visit SeongSu's twitter")
